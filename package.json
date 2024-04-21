@@ -1,0 +1,26 @@
+{
+  "name": "2024_04_holyjs",
+  "version": "1.0.0",
+  "description": "2024 HolyJS Spring Slides",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wentout/2024_04_HolyJS.git"
+  },
+  "keywords": [
+    "Pro.Prototypes",
+    "Workshop"
+  ],
+  "author": "went.out@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wentout/2024_04_HolyJS/issues"
+  },
+  "homepage": "https://github.com/wentout/2024_04_HolyJS#readme",
+  "dependencies": {
+    "vite": "^5.2.9"
+  }
+}
