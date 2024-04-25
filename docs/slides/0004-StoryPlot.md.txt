@@ -4,7 +4,7 @@
 
 <Box>
 <center>
-<img src="./content/img/poly_red.svg"  style={{width: '70vw'}} />
+<img src="./content/img/poly_struct.svg"  style={{width: '70vw'}} />
 </center>
 </Box>
 
@@ -15,14 +15,13 @@
 
 <Box>
 <center>
-<img src="./content/img/poly_struct.svg"  style={{width: '70vw'}} />
+<img src="./content/img/poly_red.svg"  style={{width: '70vw'}} />
 </center>
 </Box>
 
 
 # ... думать через with ...
 
-<h1 className="borderline">-1</h1>
 
 -----
 
@@ -34,6 +33,7 @@
 </center>
 </Box>
 
+<h1 className="borderline">-1</h1>
 
 -----
 

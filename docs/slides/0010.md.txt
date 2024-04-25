@@ -46,15 +46,21 @@
 -----
 
 
-<Box sx={{marginTop: '10vh'}}>
+<Box>
 <center>
 
-<h1 style={{fontSize: '11vh', color:'orange'}}>links</h1>
+<h1 style={{fontSize: '12vh', color:'orange'}}>links</h1>
 
-<br/>
-<br/>
-<br/>
-<br/>
+<table>
+<tr>
+
+<td>
+
+<img src="./content/qrcode.png"  style={{marginRight: '5vw', width: '27vw'}} />
+
+</td>
+
+<td>
 
 # https://twitter.com/went_out
 
@@ -64,34 +70,23 @@
 
 <br/>
 
-# https://github.com/wentout/PiterJS_54
+# https://github.com/wentout/typeomatica
+
+</td>
+
+</tr>
+</table>
 
 
 </center>
 </Box>
 
 
-
 -----
 
 
 -----
 
-
------
-
-
-
-<Box sx={{marginTop: '10vh'}}>
-<center>
-<h1 style={{color:'orange'}}>where you can peer at</h1>
-
-<a href="https://www.npmjs.com/package/mnemonica">
-<img src="./content/img/mnemonica.png" style={{width: '55vw'}} />
-</a>
-
-</center>
-</Box>
 
 -----
 
