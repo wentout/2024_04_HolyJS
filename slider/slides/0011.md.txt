@@ -52,6 +52,7 @@
 <h1 style={{fontSize: '12vh', color:'orange'}}>links</h1>
 
 <table>
+<tbody>
 <tr>
 
 <td>
@@ -75,6 +76,7 @@
 </td>
 
 </tr>
+</tbody>
 </table>
 
 
