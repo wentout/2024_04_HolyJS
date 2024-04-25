@@ -91,7 +91,7 @@ console.log(a - 10);			// Error
 
 -----
 
-# хитросплетения : Primitives Types or Primitive Values
+# но with examples всё ещё ...
 
 <div className='codesmall'>
 
@@ -113,7 +113,7 @@ with ( 0 ) {
 
 -----
 
-# However Object's root with example is nice
+# но with examples всё ещё ...
 
 <div className='codesmall'>
 

@@ -13,6 +13,7 @@ export default defineConfig({
     strictPort: true
   },
   build: {
+    cssMinify: false,
     outDir: '../docs',
     emptyOutDir: true,
     chunkSizeWarningLimit: 2048
