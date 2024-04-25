@@ -1,44 +1,13 @@
 
 -----
 
-<h1 style={{fontSize:'15vh', color: 'orange'}}>Intricacies</h1>
+<h1 style={{fontSize:'15vh', color: 'orange'}}>хитросплетения</h1>
 
-<h1 className="borderline">2</h1>
-
------
-
-# intricacies : Function prototype
-
-```javascript className=codegiantshift
-
-Function.prototype
-// or
-function.prototype
-
-// OR ???
-// ...
-```
+<h1 className="borderline">3</h1>
 
 -----
 
-# intricacies : Function prototype
-
-```javascript className=codegiantshift
-
-Function.prototype
-// or
-function.prototype
-
-// OR ???
-Object.getPrototypeOf(function)
-
-```
-
-<Button onClick={() => { runExample('05_intricaciesFnProto')}}>Run Me</Button>
-
------
-
-# intricacies : Primitives Types or Primitive Values
+# хитросплетения : Primitives Types or Primitive Values
 
 ```javascript className=codehugeshift
 
@@ -58,9 +27,10 @@ myNumber.valueOf();
 
 -----
 
-# intricacies : Primitives Types or Primitive Values
+# хитросплетения : Primitives Types or Primitive Values
 
-```javascript className=codemediumshift
+<div className="codesmall">
+```javascript
 
 const vectorObj = new Number(5);
 const proxyAsNumber = new Proxy(vectorObj, {
@@ -75,12 +45,13 @@ const proxyAsNumber = new Proxy(vectorObj, {
 });
 
 ```
+</div>
 
 <Button onClick={() => { runExample('07_NumberProxy')}}>Run Me</Button>
 
 -----
 
-# intricacies : Primitives Types or Primitive Values
+# хитросплетения : Primitives Types or Primitive Values
 
 ```javascript className=codehugeshift
 
@@ -100,7 +71,7 @@ console.log(a - 10); 			// guess
 
 -----
 
-# intricacies : Primitives Types or Primitive Values
+# хитросплетения : Primitives Types or Primitive Values
 
 ```javascript className=codehugeshift
 
@@ -120,7 +91,7 @@ console.log(a - 10);			// Error
 
 -----
 
-# intricacies : Primitives Types or Primitive Values
+# хитросплетения : Primitives Types or Primitive Values
 
 <div className='codesmall'>
 
@@ -164,6 +135,85 @@ with ( Object ) {
 
 -----
 
+# хитросплетения : Function prototype
+
+<div className="codemediumshift">
+```javascript className=codegiantshift
+
+Function.prototype
+// or
+function.prototype
+
+// OR ???
+// ...
+```
+</div>
+
+-----
+
+# хитросплетения : Function prototype
+
+<div className="codemediumshift">
+```javascript className=codegiantshift
+
+Function.prototype
+// or
+function.prototype
+
+// OR ???
+Object.getPrototypeOf(function)
+
+```
+</div>
+
+<Button onClick={() => { runExample('05_хитросплетенияFnProto')}}>Run Me</Button>
+
+
+-----
+
+-----
+
+# хитросплетения : Factory
+
+<div className="codemediumshift">
+```javascript className=codegiantshift
+
+function.prototype
+
+// 1997 ???
+Object.setPrototypeOf(function)
+
+// Factory of Constructors
+
+```
+</div>
+
+<Button onClick={() => { runExample('05_Factory')}}>Run Me</Button>
+
+-----
+
+-----
+
+# хитросплетения : Factory of Factories
+
+<div className="codemediumshift">
+```javascript
+
+function.prototype
+
+// 1997 ???
+Object.setPrototypeOf(function)
+
+// Factory of Constructors
+
+```
+</div>
+
+<Button onClick={() => { runExample('05_FactoryOfFactories')}}>Run Me</Button>
+
+
+-----
+
 # Numbers → Array → Object : Complicated Chains
 
 <Box sx={{marginLeft:'10vw', marginTop:'10vh'}}>
@@ -180,34 +230,7 @@ with ( Object ) {
 
 -----
 
-# How to emulate Prototype Chain ?
-
-<div className='codesmall'>
-
-```javascript
-const PrototypeChain = [{a:1}, {b:2}, {c:3}];
-const myObject = {};
-const accessorProxy = new Proxy(myObject, {
-	get (target, prop, receiver) {
-		let result;
-		PrototypeChain.reverse().forEach(current => {
-			if (result === undefined) {
-				result = Reflect.get(current, prop);
-			}
-		});
-		return result;
-	}
-});
-Reflect.setPrototypeOf(myObject, accessorProxy);
-
-```
-</div>
-
-<Button onClick={() => { runExample('12_ProtoEmulation')}}>Run Me</Button>
-
------
-
-# intricacies : super() is a call !
+# хитросплетения : super() is a call !
 
 <div className='codemedium'>
 
@@ -231,13 +254,13 @@ class SomeClass {
 
 -----
 
-# intricacies : super() is a call !
+# хитросплетения : super() is a call !
 
 <Box sx={{marginLeft:'10vw', marginTop:'10vh'}}>
 
-* # define at least 3 class extends
-* # define at least 3 functions 4 extention
-* # mix them all and review the result
+* # определить три class extends
+* # определить 3 functions как extends
+* # всё это перемешать и посмотреть результат
 
 </Box>
 

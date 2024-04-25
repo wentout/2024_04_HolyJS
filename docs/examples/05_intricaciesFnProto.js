@@ -6,6 +6,7 @@ console.log('\n --- constructor features --- \n');
 
 const MyFn = function () { };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const MyFnProto = Object.getPrototypeOf(MyFn);
 
 console.log('function prototype === Function.prototype',
@@ -81,19 +82,3 @@ console.log('instance inspect name : ', instanceWithName);
 
 debugger;
 
-console.log('\n --- construct proxy --- \n');
-
-const Cstr = new Proxy(MyFn, {
-	get (target, propName, receiver) {
-		console.log('.get: ', propName);
-		return Reflect.get(target, propName, receiver);
-	},
-	construct (target, argumentsList, newTarget) {
-		console.log('.construct invocation');
-		return Reflect.construct(target, argumentsList, newTarget);
-	}
-});
-
-const proxyInstance = new Cstr;
-
-debugger;
