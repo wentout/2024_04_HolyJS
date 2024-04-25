@@ -3,6 +3,7 @@ import { ThemeUIProvider } from 'theme-ui';
 import { dark } from '@theme-ui/presets';
 
 const Slide = function () {
+	// eslint-disable-next-line @typescript-eslint/no-this-alias
 	const slide = this;
 
 	if (this.failConstructorItself) {
@@ -56,6 +57,7 @@ const Slide = function () {
 };
 
 Slide.prototype.View = function () {
+	// eslint-disable-next-line @typescript-eslint/no-this-alias
 	const app = this;
 	const {
 		SlideView

@@ -6,15 +6,14 @@ import Chart from './Chart';
 import { Box, Heading, Button } from 'theme-ui';
 
 import { evaluateSync } from '@mdx-js/mdx'
-import { MDXProvider } from '@mdx-js/react'
 import * as runtime from 'react/jsx-runtime'
 
 
-const SlideMDX = function () {
+const MDX = function () {
 	this.data = this.slides.current.data;
 };
 
-SlideMDX.prototype.View = function () {
+MDX.prototype.View = function () {
 
 	// eslint-disable-next-line @typescript-eslint/no-this-alias
 	const me = this;
@@ -75,4 +74,5 @@ SlideMDX.prototype.View = function () {
 	);
 };
 
-export default SlideMDX;
+// eslint-disable-next-line react-refresh/only-export-components
+export default MDX;

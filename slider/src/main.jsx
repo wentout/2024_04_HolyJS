@@ -15,20 +15,24 @@ import postHook from './postCreation';
 // @ts-expect-error no .dts
 defaultNamespace.registerHook('postCreation', postHook);
 
-const Runner = define('Main', Main);
+// eslint-disable-next-line react-refresh/only-export-components
+const Runner = define(Main);
 
-const SlideRoot = Runner.define('Slide', Slide);
+// eslint-disable-next-line react-refresh/only-export-components
+const SlideRoot = Runner.define(Slide);
 
-SlideRoot.define('Title', Title);
-SlideRoot.define('Title2', Title2);
+SlideRoot.define(Title);
+SlideRoot.define(Title2);
 
-const SlideStarter = SlideRoot.define('Starter', Starter);
-SlideStarter.define('Progressor', Progressor);
-SlideStarter.define('Footer', Footer);
+// eslint-disable-next-line react-refresh/only-export-components
+const SlideStarter = SlideRoot.define(Starter);
+SlideStarter.define(Progressor);
+SlideStarter.define(Footer);
 
-const SlideMDX = SlideRoot.define('MDX', MDX);
-SlideMDX.define('Progressor', Progressor);
-SlideMDX.define('Footer', Footer);
+// eslint-disable-next-line react-refresh/only-export-components
+const SlideMDX = SlideRoot.define(MDX);
+SlideMDX.define(Progressor);
+SlideMDX.define(Footer);
 
 const app = new Runner('root');
 // // const app = new App('root');

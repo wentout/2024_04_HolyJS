@@ -1,5 +1,5 @@
 window.runExample = async function (path) {
-	const fetched = await fetch(`../examples/${path}.js`, {
+	const fetched = await fetch(`../2024_04_HolyJS/examples/${path}.js`, {
 		headers: {
 			"Content-Type": "text/plain",
 		},

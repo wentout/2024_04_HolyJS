@@ -94,5 +94,6 @@ const Cstr = new Proxy(MyFn, {
 	}
 });
 
-new Cstr;
+const proxyInstance = new Cstr;
 
+debugger;

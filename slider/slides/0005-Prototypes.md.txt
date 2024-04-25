@@ -10,7 +10,7 @@
 
 <Box sx={{marginTop: '25vh'}}>
 <center>
-<h1 style={{fontSize: '7vh', color: 'green'}}>if you look at the code</h1>
+<h1 style={{fontSize: '7vh', color: 'green'}}>если вы смотрите на код</h1>
 </center>
 </Box>
 
@@ -18,8 +18,8 @@
 
 <Box sx={{marginTop: '25vh'}}>
 <center>
-<h1 style={{fontSize: '7vh', color: 'green'}}>if you look at the code</h1>
-<h1 style={{fontSize: '8vh', color: 'orange'}}>for a long time</h1>
+<h1 style={{fontSize: '7vh', color: 'green'}}>если вы смотрите на код</h1>
+<h1 style={{fontSize: '8vh', color: 'orange'}}>очень долгое время</h1>
 </center>
 </Box>
 
@@ -27,18 +27,18 @@
 
 <Box sx={{marginTop: '25vh'}}>
 <center>
-	<h1 style={{fontSize: '7vh', color: 'green'}}>if you look at the code</h1>
-	<h1 style={{fontSize: '8vh', color: 'orange'}}>for a long time</h1>
-	<h1 style={{fontSize: '9vh'}}>then the code starts to peer at you</h1>
+	<h1 style={{fontSize: '7vh', color: 'green'}}>если вы смотрите на код</h1>
+	<h1 style={{fontSize: '8vh', color: 'orange'}}>очень долгое время</h1>
+	<h1 style={{fontSize: '9vh'}}>код начинает смотреть на вас</h1>
 </center>
 </Box>
 
 -----
 
-# Early Beginning Simpliest Prototypes Example
+# простейшее использование Proto'типов
 
 ```javascript className=codehugeshift
-// back to the 1995
+// back to the 1997 spec release
 var TheConstructor = function () {
 	this;
 	debugger;
@@ -52,7 +52,7 @@ var instance = new TheConstructor;
 <Button onClick={() => { runExample('01_1995')}}>Run Me</Button>
 
 -----
-# that frightening picture
+# та самая &mdash; самая страшная картинка
 
 <Box>
 <center>
@@ -95,7 +95,7 @@ Unlike most class-based object languages, properties can be added to objects dyn
 
 -----
 
-# How Deep Prototype Chain Is ?
+# Насколько глубока Кроличья Нора ?
 
 <Box>
 <center>

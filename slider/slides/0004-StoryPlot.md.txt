@@ -1,19 +1,6 @@
 
-# ... with thinking ...
 
-<h1 className="borderline">-1</h1>
-
-
------
-
-# I just like this two slides
-
-<center>
-
-# may be except of doing this
-</center>
-
-
+# и ещё мне просто нравятся эти два слайда
 
 <Box>
 <center>
@@ -24,13 +11,7 @@
 
 -----
 
-# I just like this two slides
-
-<center>
-
-# let we start doing that ?
-</center>
-
+# и ещё мне просто нравятся эти два слайда
 
 <Box>
 <center>
@@ -39,12 +20,17 @@
 </Box>
 
 
+# ... думать через with ...
+
+<h1 className="borderline">-1</h1>
+
+-----
 
 -----
 
 <Box sx={{marginTop: '35vh'}}>
 <center>
-<h1 style={{fontSize: '11vh', color: 'cyan'}}>... with thinking ...</h1>
+<h1 style={{fontSize: '11vh', color: 'cyan'}}>... with ...</h1>
 </center>
 </Box>
 
@@ -53,9 +39,12 @@
 
 -----
 
-# IMO : the sort of thinking JavaScript is designed for
+# IMO &mdash; это исходное назначение JavaScript
 
 ```javascript class=codegiantshift
+
+// this code will fail in strict mode
+// so let just copy it to the console
 
 with ( [ 2, 5 ] ) {
 	console.log(
@@ -65,13 +54,12 @@ with ( [ 2, 5 ] ) {
 	);		// 25
 }
 
-```
 
-<Button onClick={() => { runExample('00_with')}}>Run Me</Button>
+```
 
 -----
 
-# MDN statements : with
+# MDN statement : with
 
 <Box sx={{textAlign: 'center'}}>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/with">

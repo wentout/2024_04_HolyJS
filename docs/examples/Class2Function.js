@@ -4,9 +4,8 @@ debugger;
 const ogp = Object.getPrototypeOf;
 const osp = Object.setPrototypeOf;
 
-const supervise = (instance, arguments) => {
+const supervise = (instance, seek4name) => {
 	debugger;
-	const seek4name = arguments.callee.name;
 	let current = instance;
 	do {
 		if (current === null) {
@@ -21,14 +20,14 @@ const supervise = (instance, arguments) => {
 	debugger;
 	const Super = ogp(current.constructor);
 	if (Super instanceof Function) {
-		Super.call(instance, ...arguments);
+		Super.call(instance, ...seek4name);
 	}
 };
 
 const Base = function () {
 	debugger;
-	console.log(5, arguments.callee.name);
-	supervise(this, arguments);
+	console.log(5, 'Base');
+	supervise(this, 'Base');
 	debugger;
 	this.base = true;
 	this.super = 0;
@@ -36,8 +35,8 @@ const Base = function () {
 
 const NextFn = function () {
 	debugger;
-	console.log(4, arguments.callee.name);
-	supervise(this, arguments);
+	console.log(4, 'NextFn');
+	supervise(this, 'NextFn');
 	debugger;
 	this.super = 1;
 	this.next = true;
@@ -46,8 +45,9 @@ const NextFn = function () {
 const ExtendedFn = function () {
 	debugger;
 	// 'use strict';
-	console.log(3, arguments.callee.name);
-	supervise(this, arguments);
+	// console.log(3, arguments.callee.name);
+	console.log(3, 'ExtendedFn');
+	supervise(this, 'ExtendedFn');
 	debugger;
 	this.super = 2;
 	this.extended = true;
@@ -103,6 +103,7 @@ class Some extends InTheMiddle {
 		this.some = true;
 	}
 }
+
 
 const some = new Some;
 

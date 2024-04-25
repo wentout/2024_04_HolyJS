@@ -122,7 +122,11 @@ console.log(a - 10);			// Error
 
 # intricacies : Primitives Types or Primitive Values
 
+<div className='codesmall'>
+
 ```javascript className=codegiantshift
+// this code will fail in strict mode
+// so let just copy it to the console
 
 with ( 0 ) {
 	console.log(
@@ -134,13 +138,17 @@ with ( 0 ) {
 
 ```
 
-<Button onClick={() => { runExample('10_with_0')}}>Run Me</Button>
+</div>
 
 -----
 
 # However Object's root with example is nice
 
-```javascript className=codegiantshift
+<div className='codesmall'>
+
+```javascript
+// this code will fail in strict mode ...
+// so let just copy it to the console
 
 with ( Object ) {
 	console.log(
@@ -152,7 +160,7 @@ with ( Object ) {
 
 ```
 
-<Button onClick={() => { runExample('11_with_null')}}>Run Me</Button>
+</div>
 
 -----
 
@@ -174,7 +182,9 @@ with ( Object ) {
 
 # How to emulate Prototype Chain ?
 
-```javascript className=codesmall
+<div className='codesmall'>
+
+```javascript
 const PrototypeChain = [{a:1}, {b:2}, {c:3}];
 const myObject = {};
 const accessorProxy = new Proxy(myObject, {
@@ -191,6 +201,7 @@ const accessorProxy = new Proxy(myObject, {
 Reflect.setPrototypeOf(myObject, accessorProxy);
 
 ```
+</div>
 
 <Button onClick={() => { runExample('12_ProtoEmulation')}}>Run Me</Button>
 
@@ -198,7 +209,9 @@ Reflect.setPrototypeOf(myObject, accessorProxy);
 
 # intricacies : super() is a call !
 
-```javascript className=codemediumshift
+<div className='codemedium'>
+
+```javascript 
 
 class SomeClass {
 	constructor() {
@@ -213,6 +226,8 @@ class SomeClass {
 }
 
 ```
+
+</div>
 
 -----
 

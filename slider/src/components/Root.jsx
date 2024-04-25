@@ -3,6 +3,7 @@ import { ThemeUIProvider } from 'theme-ui';
 import { dark } from '@theme-ui/presets';
 
 const Root = function () {
+	// eslint-disable-next-line @typescript-eslint/no-this-alias
 	const app = this;
 	
 	const {

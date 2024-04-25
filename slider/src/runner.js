@@ -490,6 +490,7 @@ Main.prototype = {
 
 	fetchSlide() {
 
+		// eslint-disable-next-line @typescript-eslint/no-this-alias
 		const slide = this;
 		const {
 			slides
@@ -614,6 +615,7 @@ Main.prototype = {
 	},
 
 	collectTimestamps() {
+		// eslint-disable-next-line @typescript-eslint/no-this-alias
 		const instance = this;
 		return {
 			[instance.constructor.name]: new Date(instance.__timestamp__),
