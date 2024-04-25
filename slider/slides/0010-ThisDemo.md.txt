@@ -5,3 +5,65 @@
 <h1 style={{fontSize:'15vh', color: 'orange'}}>What We Can Do</h1>
 
 <h1 className="borderline" style={{margin: '42vh 7vw 0 0'}}>*</h1>
+
+-----
+
+# строгая типизация на замене прототипа
+
+<div className='codesmall'>
+
+```typescript
+import {  Strict } from 'typeomatica';
+
+@Strict({ someProp: 123 })
+class DecoratedByBase {
+	someProp!: number;
+}
+class ExtendedDecoratedByBase extends DecoratedByBase {
+	someProp: number;
+	constructor() {
+		super();
+		this.someProp = 321;
+		decoratedSomeProp = this.someProp;
+	}
+}
+
+```
+</div>
+
+-----
+
+# цепочка безответственности
+
+<div className='codesmall'>
+```typescript
+import { decorate, apply }from '..';
+
+@decorate()
+class MyDecoratedClass {
+	field: number;
+	constructor () {
+		this.field = 123;
+	}
+}
+
+@decorate(MyDecoratedClass)
+class MyDecoratedSubClass { ... }
+
+```
+</div>
+
+-----
+
+# а так выглядит код этой презентации'
+
+```javascript
+
+const Runner = define(Main);
+
+const SlideRoot = Runner.define(Slide);
+
+const SlideMDX = SlideRoot.define(MDX);
+SlideMDX.define(Progressor);
+SlideMDX.define(Footer);
+```

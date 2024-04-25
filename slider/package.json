@@ -24,7 +24,9 @@
     "mnemonica": "^0.9.982",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "theme-ui": "^0.16.2"
+    "theme-ui": "^0.16.2",
+    "ts-node": "^10.9.2",
+    "typeomatica": "^0.3.34"
   },
   "devDependencies": {
     "@types/react": "^18.2.79",

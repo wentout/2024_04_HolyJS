@@ -8,12 +8,12 @@
 
 -----
 
+# прокси для конструктора
 
 <div className='codesmall'>
 
 ```javascript
 
-# прокси для конструктора
 
 const MyFn = function () { };
 
@@ -37,7 +37,7 @@ const proxyInstance = new MyConstructor;
 
 -----
 
-# Эмуляция Prototype Chain ...
+# эмуляция Prototype Chain ...
 
 <div className='codesmall'>
 
@@ -63,6 +63,7 @@ Reflect.setPrototypeOf(myObject, accessorProxy);
 <Button onClick={() => { runExample('12_ProtoEmulation')}}>Run Me</Button>
 
 
+-----
 
 -----
 
@@ -71,6 +72,33 @@ Reflect.setPrototypeOf(myObject, accessorProxy);
 <h1 className="borderline">5</h1>
 
 -----
+
+# замена Prototype Chain ...
+
+<div className='codesmall'>
+
+```javascript
+const PrototypeChain = [{a:1}, {b:2}, {c:3}];
+const MyConstructor = function () {};
+const accessorProxy = new Proxy(MyConstructor.prototype, {
+	get (target, prop, receiver) {
+		let result;
+		PrototypeChain.reverse().forEach(current => {
+			if (result === undefined) {
+				result = Reflect.get(current, prop);
+			}
+		});
+		return result;
+	}
+});
+Reflect.setPrototypeOf(MyConstructor.prototype, accessorProxy);
+const myObject = new MyConstructor;
+
+```
+</div>
+
+<Button onClick={() => { runExample('12_ProtoReplacement')}}>Run Me</Button>
+
 
 -----
 

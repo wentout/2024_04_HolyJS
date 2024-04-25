@@ -9,7 +9,6 @@
     "build": "cd ./slider && npm run build",
     "lint": "cd ./slider && npm run lint",
     "preview": "cd ./slider && npm run preview"
-
   },
   "repository": {
     "type": "git",
@@ -26,6 +25,7 @@
   },
   "homepage": "https://github.com/wentout/2024_04_HolyJS#readme",
   "dependencies": {
+    "ts-node": "^10.9.2",
     "vite": "^5.2.9"
   }
 }
