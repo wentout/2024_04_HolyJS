@@ -3,7 +3,7 @@ debugger;
 
 const SingletonWrapper = function () { };
 
-SingletonWrapper.prototype = Object.create(window);
+SingletonWrapper.prototype = Object.create(document);
 
 SingletonWrapper.prototype.constructor = SingletonWrapper;
 
@@ -15,10 +15,6 @@ console.log(instance);
 
 debugger;
 
-console.log(instance.location);
-
-debugger;
-
-console.log(instance.document);
+console.log(typeof document.querySelector);
 
 debugger;

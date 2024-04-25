@@ -166,7 +166,7 @@ Object.getPrototypeOf(function)
 ```
 </div>
 
-<Button onClick={() => { runExample('05_хитросплетенияFnProto')}}>Run Me</Button>
+<Button onClick={() => { runExample('05_FnProto')}}>Run Me</Button>
 
 
 -----
