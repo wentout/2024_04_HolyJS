@@ -105,7 +105,11 @@ class Some extends InTheMiddle {
 }
 
 
+debugger;
+
 const some = new Some;
+
+debugger;
 
 console.log('some.base  : ', some.base);
 console.log('some.super : ', some.super);
