@@ -21,12 +21,21 @@ class MyDecoratedSubClass {
 
 debugger;
 export const myDecoratedInstance = new MyDecoratedClass;
-export const myDecoratedSubInstance = apply(myDecoratedInstance, MyDecoratedSubClass);
+setTimeout(() => {
+	const myDecoratedSubInstance = apply(myDecoratedInstance, MyDecoratedSubClass);
+	debugger;
+	console.log(myDecoratedSubInstance.field);
+	console.log(myDecoratedSubInstance.sub_field);
+	
+	// @ts-expect-error
+	console.log(myDecoratedInstance.__timestamp__);
+	debugger;
+	console.log(myDecoratedSubInstance);
+	// @ts-expect-error
+	console.log(myDecoratedSubInstance.__args__);
+	// @ts-expect-error
+	console.log(myDecoratedSubInstance.__timestamp__);
+	debugger;
+		
+}, 1000);
 
-debugger;
-console.log(myDecoratedSubInstance.field);
-console.log(myDecoratedSubInstance.sub_field);
-
-debugger;
-console.log(myDecoratedSubInstance);
-debugger;

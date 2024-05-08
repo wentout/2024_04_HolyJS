@@ -1,4 +1,4 @@
-import {  Strict } from 'typeomatica';
+import { Strict } from 'typeomatica';
 
 debugger;
 
